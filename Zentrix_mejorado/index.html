@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Panel demostrativo de Zentrix para la práctica de Azure Storage y CDN. Soluciones de software, control y automatización.">
+  <meta name="theme-color" content="#101b2d">
+  <title>Zentrix | Panel de soluciones tecnológicas</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="Zentrix, inicio">
+        <span class="brand-mark" aria-hidden="true">Z</span>
+        <span>zentrix<span class="brand-dot">.</span><small>TECNOLOGÍA APLICADA</small></span>
+      </a>
+      <div class="topbar-status"><span class="status-dot"></span> Panel de demostración</div>
+      <a class="topbar-link" href="#contacto">Contactar <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <aside class="sidebar" aria-label="Navegación del panel">
+      <p class="sidebar-label">ESPACIO DE TRABAJO</p>
+      <nav class="side-nav">
+        <a class="side-link active" href="#inicio"><span aria-hidden="true">▦</span> Resumen</a>
+        <a class="side-link" href="#servicios"><span aria-hidden="true">◈</span> Soluciones</a>
+        <a class="side-link" href="#proyectos"><span aria-hidden="true">⌘</span> Áreas de trabajo</a>
+        <a class="side-link" href="#nosotros"><span aria-hidden="true">ⓘ</span> Acerca de Zentrix</a>
+        <a class="side-link" href="#contacto"><span aria-hidden="true">↗</span> Contacto</a>
+      </nav>
+      <div class="sidebar-note"><span class="note-icon">✦</span><strong>Una idea, muchas posibilidades.</strong><p>Software, electrónica y automatización orientados a necesidades reales.</p></div>
+      <div class="sidebar-bottom"><span class="avatar">ZX</span><span><strong>Equipo Zentrix</strong><small>Desarrollo tecnológico</small></span></div>
+    </aside>
+
+    <main class="content" id="inicio">
+      <section class="welcome-row">
+        <div><p class="eyebrow">PANEL GENERAL / ZENTRIX</p><h1>Tecnología que trabaja <span>contigo.</span></h1><p class="welcome-copy">Una vista general de nuestras líneas de solución. Los indicadores de esta página son datos de demostración, no métricas de producción.</p></div>
+        <div class="date-chip"><span aria-hidden="true">◷</span><span id="current-date">Actualizando fecha…</span></div>
+      </section>
+
+      <section class="metrics-grid" aria-label="Indicadores de demostración">
+        <article class="metric-card"><div class="metric-top"><span>Áreas de solución</span><span class="metric-icon blue">▦</span></div><p class="metric-value" id="metric-solutions">06</p><p class="metric-foot"><span class="metric-dot blue-dot"></span> Líneas de trabajo presentadas</p></article>
+        <article class="metric-card"><div class="metric-top"><span>Enfoque de desarrollo</span><span class="metric-icon green">⌁</span></div><p class="metric-value" id="metric-focus">A medida</p><p class="metric-foot"><span class="metric-dot green-dot"></span> Según las necesidades del proyecto</p></article>
+        <article class="metric-card"><div class="metric-top"><span>Tipo de iniciativa</span><span class="metric-icon orange">✦</span></div><p class="metric-value" id="metric-stage">En desarrollo</p><p class="metric-foot"><span class="metric-dot orange-dot"></span> Proyecto tecnológico en evolución</p></article>
+      </section>
+
+      <section class="section-panel overview-panel" aria-labelledby="overview-title">
+        <div class="panel-heading"><div><p class="eyebrow">QUÉ HACEMOS</p><h2 id="overview-title">Soluciones para operaciones reales</h2></div><a class="subtle-link" href="#servicios">Ver servicios <span aria-hidden="true">→</span></a></div>
+        <div class="overview-grid">
+          <article class="overview-card"><span class="overview-symbol symbol-blue">▦</span><div><h3>Software de gestión</h3><p>Sistemas tipo ERP para organizar inventarios, solicitudes, recursos y procesos internos.</p></div><span class="status-tag">Software</span></article>
+          <article class="overview-card"><span class="overview-symbol symbol-green">◉</span><div><h3>Monitoreo y viveros</h3><p>Propuestas con sensores y microcontroladores para consultar condiciones ambientales.</p></div><span class="status-tag">Hardware</span></article>
+          <article class="overview-card"><span class="overview-symbol symbol-orange">⌑</span><div><h3>Control de acceso</h3><p>Registro de entradas y salidas con credenciales RFID u otros mecanismos apropiados.</p></div><span class="status-tag">Control</span></article>
+          <article class="overview-card"><span class="overview-symbol symbol-cyan">≈</span><div><h3>Automatización de riego</h3><p>Activación manual o automatizada adaptable al espacio y a las necesidades de agua.</p></div><span class="status-tag">Automatización</span></article>
+        </div>
+      </section>
+
+      <section class="lower-grid" id="servicios">
+        <article class="section-panel services-panel"><div class="panel-heading"><div><p class="eyebrow">CATÁLOGO</p><h2>Servicios principales</h2></div></div>
+          <div class="service-list">
+            <div class="service-row"><span class="service-index">01</span><div><h3>Sistemas ERP y gestión</h3><p>Organización de inventarios, recursos y flujos de trabajo.</p></div><span class="arrow">↗</span></div>
+            <div class="service-row"><span class="service-index">02</span><div><h3>Control de acceso y estacionamiento</h3><p>Prototipos para entradas, salidas y barreras automatizadas.</p></div><span class="arrow">↗</span></div>
+            <div class="service-row"><span class="service-index">03</span><div><h3>Monitoreo y riego</h3><p>Integración potencial de sensores, electrónica y software.</p></div><span class="arrow">↗</span></div>
+            <div class="service-row"><span class="service-index">04</span><div><h3>Desarrollo personalizado</h3><p>Prototipos ajustados al alcance y los objetivos acordados.</p></div><span class="arrow">↗</span></div>
+          </div>
+        </article>
+        <article class="section-panel about-panel" id="nosotros"><p class="eyebrow">QUIÉNES SOMOS</p><div class="about-monogram">Z<span>.</span></div><h2>Dos estudiantes. Una idea: crear soluciones útiles.</h2><p>Zentrix nace de la iniciativa de dos estudiantes del Tecnológico Nacional de México interesados en aplicar sus conocimientos de software y sistemas electrónicos a situaciones reales.</p><div class="about-points"><span>✓ Trato directo</span><span>✓ Soluciones prácticas</span><span>✓ Mejora continua</span></div></article>
+      </section>
+
+      <section class="section-panel project-panel" id="proyectos"><div class="panel-heading"><div><p class="eyebrow">ÁREAS DE TRABAJO</p><h2>Del software al entorno físico</h2></div><span class="demo-label">VISTA CONCEPTUAL</span></div><div class="project-grid">
+        <article class="project-card"><div class="project-art software-art"><div class="mock-screen"><div class="mock-screen-head"><i></i><i></i><i></i></div><div class="mock-screen-body"><span></span><span></span><span></span><b></b></div></div></div><h3>Aplicaciones empresariales</h3><p>Interfaces y herramientas para simplificar tareas administrativas.</p></article>
+        <article class="project-card"><div class="project-art nursery-art"><div class="sun"></div><div class="plant"><i></i><i></i><i></i><b></b></div><span class="sensor-badge">SENSOR / DEMO</span></div><h3>Viveros inteligentes</h3><p>Conceptos de monitoreo ambiental y apoyo al riego.</p></article>
+        <article class="project-card"><div class="project-art gate-art"><div class="gate-post"><i></i></div><div class="gate-arm"></div><span class="gate-badge">ACCESO / DEMO</span></div><h3>Acceso automatizado</h3><p>Diseños de referencia para plumas y control de entradas.</p></article>
+      </div><p class="disclaimer">Las ilustraciones son conceptuales y los indicadores son simulados. No representan equipos conectados ni resultados de clientes.</p></section>
+
+      <section class="contact-banner" id="contacto"><div><p class="eyebrow">¿TIENES UNA IDEA?</p><h2>Hablemos de lo que necesitas resolver.</h2><p>Podemos explorar una solución de software, control o automatización acorde con tu proyecto.</p></div><a class="primary-button" href="mailto:contacto@zentrix.mx?subject=Consulta%20sobre%20un%20proyecto%20Zentrix">Contactar al equipo <span aria-hidden="true">↗</span></a></section>
+    </main>
+
+    <footer class="footer"><span>© <span id="current-year"></span> Zentrix. Todos los derechos reservados.</span><span>Panel demostrativo · HTML, CSS y JavaScript</span></footer>
+  </div>
+</body>
+</html>
